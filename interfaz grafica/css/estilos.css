@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background-image:  url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+ 
+}
+
+.menu{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+
+}
+
+.menunavegacion{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*transition: transform .3s ease-in-out;*/
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.spread{
+
+    transform: translate(0);
+}
+
+.menunavegacion a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25;
+}
+/*servicios*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #764ba2;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-servicio{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 40%;
+}
+
+.service{
+
+    margin-bottom: 20px;
+}
+
+.n-service{
+
+    margin-bottom: 7px;
+    color: #764ba2;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 7px;
+}
+
+
+.gallery{
+    background: white;
+}
+
+.contenedor-galeria{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 1, 1, 0.7);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background:rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(1000%);
+    transition : transform .4s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    width: 30%;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: transform .3s .2s ;
+}
+
+.showimage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/*redes*/
+
+
+footer{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);;
+    padding-bottom: 0.1px;
+
+}
+
+
+.footer-content{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.contact-us{
+
+    width: 40%;
+    color: white;
+}
+
+
+
+.brand+p{
+    width: 500;
+    
+}
+
+.social-media{
+    width: 40%;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.social-media-icon {
+    display: inline;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border:1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+.social-media-icon:hover{
+    background:white;
+    color:#764ba2;
+}
+
+.social-media-icon i{
+
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.registro{
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 1px;
+    
+}
+
+
+.individualt{
+    width: 40%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    height: 40px;
+    
+}
+
+
+.cajas-texto p{
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.informacion{
+
+    width: 60%;
+    margin-right: 30%;
+}
